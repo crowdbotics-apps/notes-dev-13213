@@ -23,7 +23,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "", TextInput_5: "" }
+  state = {}
 
   render = () => (
     <ImageBackground
@@ -32,22 +32,7 @@ export default class Blank extends React.Component {
           "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/Black.jpg"
       }}
       style={styles.ImageBackground_1}
-    >
-      <TextInput
-        placeholder="Enter Name"
-        editable={true}
-        style={styles.TextInput_3}
-        value={this.state.TextInput_3}
-        onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
-      />
-      <TextInput
-        placeholder="Enter Age"
-        editable={true}
-        style={styles.TextInput_5}
-        value={this.state.TextInput_5}
-        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
-      />
-    </ImageBackground>
+    />
   )
 }
 
@@ -56,6 +41,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   ImageBackground_1: {
     marginLeft: 0,
     marginRight: 0,
@@ -85,6 +71,7 @@ const styles = StyleSheet.create({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   TextInput_3: {
     width: "100%",
     marginLeft: 0,
@@ -116,6 +103,7 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   TextInput_5: {
     width: "100%",
     marginLeft: 0,
@@ -146,5 +134,30 @@ const styles = StyleSheet.create({
     textTransform: "none",
     lineHeight: 12,
     letterSpacing: 0
+  },
+  ImageBackground_1: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "stretch",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    backgroundSize: "auto"
   }
 })
